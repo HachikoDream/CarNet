@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">车联网</string>
+    <string name="addOrder">申请车辆</string>
+    <string name="orderList">申请列表</string>
+    <string name="login_title">车联网云平台</string>
+    <string name="header_title">车联网平台</string>
+    <string name="username_hint">用户名</string>
+    <string name="pwd_hint">密码</string>
+    <string name="login">登录</string>
+    <string name="modify_pwd_old">旧密码</string>
+    <string name="modify_pwd_new">新密码</string>
+    <string name="modify_pwd_new2">再次输入新密码</string>
+    <string name="confirm_modify_pwd">修改密码</string>
+    <string name="empty_msg_hint">暂无相关信息</string>
+    <string name="logout">注销</string>
+    <string name="apply">申请</string>
+    <string name="verify">审核</string>
+    <string name="srcPlace">乘车地点</string>
+    <string name="destPlace">目的地</string>
+    <string name="orderman">申请人</string>
+    <string name="useman">乘车人</string>
+    <string name="useman_hint">(多个乘车人可用逗号隔开)</string>
+    <string name="usephone">联系电话</string>
+    <string name="startDate">出发日期</string>
+    <string name="endDate">返回日期</string>
+    <string name="reason">用车事由</string>
+    <string name="tripType">路途性质</string>
+    <string name="choosecar">选择车辆</string>
+    <string name="main_act_title">车联网平台</string>
+    <string name="myaccount">我的账号</string>
+    <string name="mymsg">我的消息</string>
+    <string name="carsearch">车辆查询</string>
+    <string name="carcontrol">车辆调度</string>
+    <string name="home">主  页</string>
+    <string name="loading_msg">正在加载中,请稍后</string>
+    <string name="search_hint">输入车牌号进行查询</string>
+
+
+</resources>

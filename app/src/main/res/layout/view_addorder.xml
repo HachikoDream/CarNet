@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/custom_toolbar" />
+
+        <EditText
+            android:id="@+id/orderman_ev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:hint="@string/orderman" />
+
+        <EditText
+            android:id="@+id/phonenum_ev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:hint="@string/usephone"
+            android:inputType="phone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="从" />
+
+            <EditText
+                android:id="@+id/srcplace_ev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/srcPlace"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="到" />
+
+            <EditText
+                android:id="@+id/destplace_ev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/destPlace"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="自" />
+
+            <EditText
+                android:id="@+id/startDate_ev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/startDate"
+                android:inputType="phone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="使用至" />
+
+            <EditText
+                android:id="@+id/enddate_ev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/endDate"
+                android:inputType="phone" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/carname_ev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:hint="@string/choosecar"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/usename_ev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:hint="@string/useman"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="5dp"
+            android:text="@string/useman_hint"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/triptype_ev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:hint="@string/tripType"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/reason_ev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:hint="@string/reason"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/apply_btn"
+            style="@style/CommonBtnStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/apply" />
+
+    </LinearLayout>
+
+
+</ScrollView>

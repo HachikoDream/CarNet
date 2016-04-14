@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wells.carnet">
+
+    <application
+        android:name=".ui.CarApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/login_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.act.MainAct"
+            android:label="@string/home" />
+        <activity
+            android:name=".ui.act.LoginAct"
+            android:label="@string/login" />
+        <activity
+            android:name=".ui.act.ModifyPwdAct"
+            android:label="@string/confirm_modify_pwd" />
+        <activity
+            android:name=".ui.act.AddOrderAct"
+            android:label="@string/addOrder" />
+        <activity
+            android:name=".ui.act.OrderListAct"
+            android:label="@string/orderList" />
+        <activity
+            android:name=".ui.act.SplashAct"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

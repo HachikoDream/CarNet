@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0766C5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="main_bg">#E6E6E6</color>
+    <color name="select_tab_color">#666666</color>
+    <color name="near_white">#f3f5f7</color>
+    <color name="edit_stroke">#75999999</color>
+    <color name="grey_line">#999999</color>
+</resources>
