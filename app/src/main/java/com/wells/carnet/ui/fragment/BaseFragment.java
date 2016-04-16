@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.baidu.mapapi.map.SupportMapFragment;
 import com.wells.carnet.contract.BaseView;
 
 import butterknife.ButterKnife;
@@ -22,6 +23,7 @@ public abstract class BaseFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         ButterKnife.bind(this, view);
         init();
+
     }
 
     protected abstract void init();

@@ -28,9 +28,9 @@ import com.wells.carnet.ui.fragment.BaseFragment;
  */
 public class VPFragmentAdapter extends FragmentStatePagerAdapter{
 
-    private BaseFragment[] mListFragments = null;
+    private Fragment[] mListFragments = null;
 
-    public VPFragmentAdapter(FragmentManager fm, BaseFragment[] fragments) {
+    public VPFragmentAdapter(FragmentManager fm, Fragment[] fragments) {
         super(fm);
         mListFragments = fragments;
     }

@@ -17,7 +17,7 @@ import butterknife.ButterKnife;
 
 public abstract class BaseAct extends AppCompatActivity {
 
-    @Bind(R.id.tl_custom)
+
     Toolbar tlCustom;
 
     @Override
@@ -25,6 +25,7 @@ public abstract class BaseAct extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(getLayoutId());
         ButterKnife.bind(this);
+        tlCustom = (Toolbar) findViewById(R.id.tl_custom);
         setToolbar();
         init();
     }

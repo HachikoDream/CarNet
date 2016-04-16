@@ -35,7 +35,7 @@ public class TempData {
     public static String[] other = {"车状态良好", "车状态良好", "车状态良好", "车状态良好", "车状态良好"};
     public static String[] owner = {"张三", "李四", "马云", "相敬", "贾围"};
     public static String userName = "admin";
-    public static String pwd = "admin123";
+    public static String pwd = "admin";
 
     public static void buildTempData(Context context) {
         CarDataSource carDataSource = CarDataSourceImpl.getInstance(context);

@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.wells.carnet.data.entity.Car;
+import com.wells.carnet.data.entity.Location;
 import com.wells.carnet.data.persistence.CarPersistenceContract.CarEntity;
 import com.wells.carnet.data.persistence.CarsDbHelper;
 
@@ -102,6 +103,49 @@ public class CarDataSourceImpl implements CarDataSource {
             carsCallback.onCarsLoaded(cars);
         } else {
             carsCallback.onDataNotAvailable();
+        }
+
+    }
+
+    @Override
+    public void getLocations(GetLocationCallback callback) {
+        checkNotNull(callback);
+        SQLiteDatabase db = mDbHelper.getReadableDatabase();
+        Cursor c = null;
+        String[] colomns = {CarEntity.COLUMN_NAME_CAR_POSITION};
+        c = db.query(CarEntity.TABLE_NAME, colomns, null, null, null, null, null);
+        List<Location> locations = new ArrayList<>();
+        c.moveToFirst();
+        while (c != null && c.getCount() > 0)
+
+        {
+            Location location = null;
+            String position = c.getString(c.getColumnIndexOrThrow(CarEntity.COLUMN_NAME_CAR_POSITION));
+            location = Location.buildByStr(position);
+            locations.add(location);
+            if (c.isLast()) {
+                break;
+            } else {
+                c.moveToNext();
+            }
+
+        }
+
+        if (c != null)
+
+        {
+            c.close();
+        }
+
+        db.close();
+        if (locations.size() > 0)
+
+        {
+            callback.onLocationsLoaded(locations);
+        } else
+
+        {
+            callback.onDataNotAvailable();
         }
 
     }

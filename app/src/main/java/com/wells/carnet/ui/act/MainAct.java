@@ -2,16 +2,20 @@ package com.wells.carnet.ui.act;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.baidu.mapapi.map.SupportMapFragment;
 import com.wells.carnet.R;
 import com.wells.carnet.contract.CarSearchContract;
+import com.wells.carnet.contract.CarShowContract;
 import com.wells.carnet.data.CarDataSource;
 import com.wells.carnet.data.CarDataSourceImpl;
 import com.wells.carnet.presenter.CarSearchPresenter;
+import com.wells.carnet.presenter.CarShowPresenter;
 import com.wells.carnet.ui.adapter.VPFragmentAdapter;
 import com.wells.carnet.ui.fragment.AccountFragment;
 import com.wells.carnet.ui.fragment.BaseFragment;
@@ -35,7 +39,7 @@ public class MainAct extends BaseAct implements NavigationView.OnNavigationItemS
     @Bind(R.id.dl_left)
     DrawerLayout mDl;
     private ActionBarDrawerToggle mDrawerToggle;
-    private BaseFragment[] fragments = {
+    private Fragment[] fragments = {
             new IndexFragment(),
             new AccountFragment(),
             new MsgFragment(),
@@ -78,7 +82,7 @@ public class MainAct extends BaseAct implements NavigationView.OnNavigationItemS
         }
         CarDataSource carDataSource = CarDataSourceImpl.getInstance(getApplicationContext());
         CarSearchContract.Presenter carSearchPresenter = new CarSearchPresenter((CarSearchContract.View) fragments[3], carDataSource);
-
+        CarShowContract.Presenter carshowPresenter = new CarShowPresenter((CarShowContract.View) fragments[0], carDataSource);
     }
 
     @Override

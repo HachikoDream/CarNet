@@ -22,7 +22,7 @@ public class SplashAct extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().addFlags(Window.FEATURE_NO_TITLE);
+//        getWindow().addFlags(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.view_splash);
         mHandler = new Handler();
         mHandler.postDelayed(new Runnable() {

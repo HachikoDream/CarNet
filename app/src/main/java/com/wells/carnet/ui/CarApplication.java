@@ -2,6 +2,7 @@ package com.wells.carnet.ui;
 
 import android.app.Application;
 
+import com.baidu.mapapi.SDKInitializer;
 import com.wells.carnet.data.CarDataSource;
 import com.wells.carnet.data.CarDataSourceImpl;
 import com.wells.carnet.data.TempData;
@@ -18,6 +19,7 @@ public class CarApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        SDKInitializer.initialize(this);
         CarsDbHelper.getInstance(this);
         if (!PreferenceUtils.hasKey(this, PreferenceUtils.Key.OPEN_STATE)) {
             PreferenceUtils.putString(this, PreferenceUtils.Key.OPEN_STATE, "OPEN");
